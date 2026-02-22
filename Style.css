@@ -1,6 +1,6 @@
 
 body {
-    background-color: #f5f5dc;
+    background-color: #eceed3;
     
 }
 
@@ -45,4 +45,12 @@ p{
 
 #TheDevs{
   font-size: small;
+}
+
+#Logo{
+  border: 4px solid #FFD700;
+  background-color: #ffffff;
+  border-radius: 4px;
+  width: 150px;
+  margin-left: 310px;
 }
