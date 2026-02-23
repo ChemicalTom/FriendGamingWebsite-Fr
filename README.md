@@ -1,2 +1,3 @@
 # FriendGamingWebsite-FR
- Un site entre pote pour présenter notre groupe de pote ajouter moi sur discord :"ethancarnivore" ajouter moi dans steam : Myxomatom
+Un site Web pour présenter notre serveur Discord entre potes.
+Si vous voulez, ajouter moi dans discord : ethancarnivore et dans steam : Myxomatom
