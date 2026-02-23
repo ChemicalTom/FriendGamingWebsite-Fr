@@ -21,3 +21,23 @@
 
     // Call the function once when the page loads
     updateTime();
+
+    // Try to play background audio; if blocked, play on first user interaction
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bgAudio');
+      if (!audio) return;
+      // attempt autoplay
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          // Autoplay blocked: play audio on the first user interaction (click or keydown)
+          const startAudio = () => {
+            audio.play().catch(() => {});
+            window.removeEventListener('click', startAudio);
+            window.removeEventListener('keydown', startAudio);
+          };
+          window.addEventListener('click', startAudio);
+          window.addEventListener('keydown', startAudio);
+        });
+      }
+    });

@@ -1,8 +1,7 @@
 
 body {
-    background-color: #eceed3;
+  background-color: #eceed3;
     
-}
 
 h1{
     font-size:xx-large;
@@ -15,21 +14,26 @@ p{
 .presentation {
     display: flex;
   justify-content: center;
-  margin: 45px 0 0 0;
+  margin: 20px 0 0 0;
+}
+
+.presentation > div {
+  text-align: center;
 }
 
 #joinroom {
   background-color: #f44336;
   color: white;
-  padding: 14px 25px;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 8px;
-  margin: 15px 0 0 285px;
+  border-radius: 6px;
+  margin: -10px auto 0;
+  transform: translate(12px, -14px);
   box-shadow: 0 9px #921a1a;
   border: #b41919;
-  
+
 }
 
 #titre {
@@ -43,6 +47,21 @@ p{
      
 }
 
+#therules {
+  list-style-position: inside;
+  padding: 0;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+#therules li {
+  margin: 8px 0;
+  list-style-position: inside;
+}
+
 #TheDevs{
   font-size: small;
 }
@@ -52,5 +71,6 @@ p{
   background-color: #ffffff;
   border-radius: 4px;
   width: 150px;
-  margin-left: 310px;
+  display: block;
+  margin: 10px auto;
 }
